@@ -3,7 +3,9 @@ set -ex
 
 rm -rf .env*
 
-GETENV=`/usr/bin/php /docker/getenv.php`
+pwd
+
+GETENV=`/usr/bin/php getenv.php`
 
 if [ "$GETENV" = "ok" ];then
   npm run build
