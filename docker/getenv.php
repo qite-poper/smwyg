@@ -5,7 +5,7 @@ if(!$token){
     exit('err: no token');
 }
 
-$appId = getenv('HEROKU_APP_ID');
+$appId = getenv('STAGING_HEROKU_APP_ID');
 $ch = curl_init();
 
 $headers = array(
