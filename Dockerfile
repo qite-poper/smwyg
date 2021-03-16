@@ -5,7 +5,7 @@ RUN apt update -y && apt -y install php php-curl
 
 COPY docker/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-COPY docker/getenv.php /getenv.php
-RUN chmod +x /getenv.php
+COPY docker/getenv.php /docker/getenv.php
+RUN chmod +x /docker/getenv.php
 
 ENTRYPOINT ["/entrypoint.sh"]

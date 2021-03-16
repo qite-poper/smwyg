@@ -4,6 +4,9 @@ set -ex
 rm -rf .env*
 
 pwd
+ls -lh
+
+cp /docker/getenv.php ./
 
 GETENV=`/usr/bin/php getenv.php`
 
