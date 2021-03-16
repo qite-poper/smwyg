@@ -7,6 +7,5 @@ COPY docker/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 COPY docker/getenv.php /docker/getenv.php
 RUN chmod +x /docker/getenv.php
-WORKDIR /app
 
 ENTRYPOINT ["/entrypoint.sh"]
