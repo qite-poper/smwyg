@@ -13,6 +13,7 @@ GETENV=`/usr/bin/php getenv.php`
 if [ "$GETENV" = "ok" ];then
   rm -rf ./node_modules
   npm install
+  npm update
   npm run build
 else
   echo "Error occured when trying to get env from heroku"
