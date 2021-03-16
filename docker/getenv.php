@@ -21,6 +21,6 @@ $server_output = curl_exec($ch);
 $list = json_decode($server_output, true);
 
 foreach ($list as $key => $value){
-    file_put_contents('/app/.env', "$key=$value \n",FILE_APPEND);
+    file_put_contents('.env', "$key=$value \n",FILE_APPEND);
 }
 echo "ok";
