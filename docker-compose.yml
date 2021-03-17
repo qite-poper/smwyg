@@ -1,0 +1,10 @@
+version: "3"
+services:
+  nginx-php:
+    image: "qite/npm"
+    volumes:
+      - ../comiru-dev/code/fe-test:/app
+      - ./docker:/docker/
+    environment:
+      STAGING_HEROKU_APP_ID: aec460cd-c84b-4e75-9b54-ab0830758648
+      STAGING_HEROKU_TOKEN: a9345e93-7c99-4552-a768-0a8b7765c2b5

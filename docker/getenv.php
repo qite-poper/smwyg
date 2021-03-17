@@ -1,11 +1,11 @@
 <?php
 
-$token = getenv("STAGING_HEROKU_TOKEN");
+$token = '9d7f3c4e-133e-4fb1-8750-926f27f30e85';
 if(!$token){
     exit('err: no token');
 }
 
-$appId = getenv('STAGING_HEROKU_APP_ID');
+$appId = 'aec460cd-c84b-4e75-9b54-ab0830758648';
 $ch = curl_init();
 
 $headers = array(
